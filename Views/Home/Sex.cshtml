@@ -1,0 +1,15 @@
+﻿@using HIT.Models
+@model IEnumerable<Sex>
+<ul>
+    @if (Model != null)
+    {
+        @foreach (Sex s in Model)
+        {
+            <li>@s.Name</li>
+        }
+    }
+    else
+    {
+        <li>No Sexes found</li>
+    }
+</ul>
